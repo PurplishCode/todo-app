@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp/signup.dart';
+import 'package:todoapp/auth/screens/signin.dart';
+import 'package:todoapp/auth/screens/signup.dart';
+import 'package:todoapp/routes.dart';
 
 void main() {
   runApp(const HomeStateful());
@@ -17,6 +19,6 @@ class _HomeStateful extends State<HomeStateful> {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home:SignUp(),debugShowCheckedModeBanner: false,);
+    return MaterialApp(home:const SignUp(),debugShowCheckedModeBanner: false, onGenerateRoute: generateRoutes,);
   }
 }
