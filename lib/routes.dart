@@ -10,7 +10,7 @@ Route<void> generateRoutes(RouteSettings routeSettings) {
     case(SignUp.screenName): return _pageRoutes(routesName: '/signup', routesView: const SignUp());
     break;
     // Add more cases correspondingly.
-    default: return MaterialPageRoute(builder: (context) => Scaffold(body: Center(child: Text("404 Not Found", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),),),));
+    default: return MaterialPageRoute(builder: (context) => const Scaffold(body: Center(child: Text("404 Not Found", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),),),));
   }
 
 }
