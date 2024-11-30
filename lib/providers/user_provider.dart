@@ -11,7 +11,7 @@ class User {
   User({required this.id, required this.fullName, required this.email, required this.password, required this.token});
   Map<String, dynamic> toMap() {
     return {
-      'fullName': fullName,
+      'full_name': fullName,
       'email':email,
       'token':token,
       'password':password,
@@ -22,7 +22,7 @@ class User {
     return User (
       id: map['_id'] ?? '',
 
-    fullName: map['fullName'] ?? '',
+    fullName: map['full_name'] ?? '',
 
     email: map['email'] ?? '',
     token: map['token'] ?? '',
