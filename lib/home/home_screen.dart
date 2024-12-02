@@ -18,7 +18,7 @@ class _Baseline extends State<Base> {
     AuthService authService = AuthService();
     var uProvider = Provider.of<UserProvider>(context, listen: false);
 
-    return Scaffold(appBar: AppBar(title: Text("Welcome abroad, ${uProvider.user.fullName}"),), body: SingleChildScrollView(child: Column(children: [ ElevatedButton(onPressed: (){ authService.signOut(context); }, child: const Text("SIGN OUT", style: TextStyle(color:Colors.white),), style: ElevatedButton.styleFrom(backgroundColor: Colors.indigoAccent),) ],),),);
+    return Scaffold(appBar: AppBar(backgroundColor: Colors.indigoAccent,title: Text("Note application", style: TextStyle(fontFamily: 'Montserrat',color: Colors.white),),), body: SingleChildScrollView(child: Column(children: [ SizedBox(height: 10,),Container(decoration: BoxDecoration(color: Colors.blue),padding: EdgeInsets.all(30),child: const Text("Hai")),SizedBox(height: 15,),ElevatedButton(onPressed: (){ authService.signOut(context); }, child: const Text("SIGN OUT", style: TextStyle(color:Colors.white),), style: ElevatedButton.styleFrom(backgroundColor: Colors.indigoAccent),) ],),),);
   }
 }
 

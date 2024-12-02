@@ -27,16 +27,15 @@ class _SignUpPage extends State<SignUp> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-            gradient:
-                LinearGradient(colors: [Colors.indigoAccent, Colors.indigo])),
-        child: Center(
+        decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/login_background.png'), fit: BoxFit.fill),
+           ),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center,children: [Text("NoteX", style: TextStyle(color:Colors.white,fontSize: 45, fontFamily: "sandrogrottesco-regular", fontWeight: FontWeight.bold),),SizedBox(height: 7,),Text("Delve into the library's of notes!", style: TextStyle(color: Colors.white, fontFamily: "sandrogrottesco-regular", fontWeight: FontWeight.bold),),Center(
             child: SingleChildScrollView(
                 padding: const EdgeInsets.all(12),
                 child: Container(
                   width: 500,
                   padding: const EdgeInsets.all(20),
-                  decoration: const BoxDecoration(color: Colors.white),
+                  decoration:  BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.white),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -111,7 +110,7 @@ class _SignUpPage extends State<SignUp> {
                           ],
                         )
                       ]),
-                ))),
+                )))],),
       ),
     );
   }
